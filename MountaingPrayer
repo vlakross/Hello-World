@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+ <style>
+   strong {
+     color: white;
+   }
+   body {
+     background-color: cyan;
+   }
+   .title {
+     font-family: helvetica;
+     font-size:40px;
+     color:aquamarine;
+     z-index: 5;
+   }
+   p {
+     font-weight: bold;
+     font-family:'Garamond' sans-serif;
+     font-size:30px;
+     color: salmon;
+      position:relative;
+     top:50px;
+     z-index: 4;
+     transition:8s;
+   }
+   article{
+     background-color: cyan;
+     position:relative;
+     left:60px;
+     height:350px;
+     padding: 15px;
+     line-height: 40px;
+     transition:10s;
+        
+   }
+   article:hover{
+     background-color: transparent;
+     height: 1200px;
+     transition:10s;
+   }
+h1, h2 {
+     text-align:center;
+     border-color:blue;
+     border-bottom: 15px;
+     border-radius: 6px;
+     background-color: white;
+     position:relative;
+      line-height:25px;
+     font-size: 35px;
+     z-index:3;
+     transition:5s;
+}
+h1:hover {
+    background-color: transparent;
+    color: cornflowerblue;
+    font-size: 42px;
+    font-stretch: expanded;
+    transition: 8s;
+}
+   p:hover {
+     color:Moccasin;
+     font-size: 40px;
+     transition:8s;
+   }
+   #landscape {
+     position:absolute
+       z-index:2;
+     border-radius:50px;
+     opacity: 0.9;
+     transition: 5s;
+  }
+   #landscape:hover {
+     opacity: 0.3;
+     transition: 5s;
+     border-radius: 400px;
+   }
+   
+   #person {
+     text-align: left;
+     border-radius:20px;
+     width:80%;
+     position:absolute;
+     top:20px;
+     left:200px;
+     opacity:0.3;
+     z-index:1;
+   }
+   #person:hover {
+     opacity: 0.9;
+     transition: 5s;
+     margin-bottom: 200px;
+     
+   }
+</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <article id="person">
+    <h1 class="title">PRAYER MOVES MOUNTAINS</h1>
+    <p>Our personal mountain might appear<strong> impassable</strong></o></P>
+      <p>But God's power changes<strong>everything</strong></p>
+  
+    </article>
+  <img id="landscape" src="https://upload.wikimedia.org/wikipedia/commons/0/07/Azerbajian_landscape.jpg" width=100% alt="large distant mountain chain">
+</body> 
+</html>
